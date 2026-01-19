@@ -7,6 +7,7 @@ html {
 }
 body {
   width: 100%;
+  overflow: hidden;
 }
 .bodycontainer {
   display: flex;
@@ -26,6 +27,11 @@ body {
   font-size: 1.8rem;
   border-radius: 10px;
 }
+@media (min-width: 320px) and (max-width: 450px) {
+    #inputform {
+        max-width: 26rem;
+    } 
+}
 #inputform h2 {
   font-size: 4.1rem;
 }
@@ -44,16 +50,16 @@ input {
   border-radius: 5px;
 }
 label {
-    font-size: 2rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 input:focus {
   outline: 1px solid rgba(35, 210, 26, 0.7);
 }
 #favcolor {
-    border: 1px solid rgba(0,0,0,0.2);
-    width: 20rem;
-    height: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 20rem;
+  height: 4rem;
 }
 #generatebutton {
   width: auto;
@@ -77,12 +83,12 @@ input:focus {
   line-height: 2.4rem;
   max-width: 35rem;
   min-height: 17rem;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #profilecard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: none;
 }
 #imagecontainer {
   max-width: 7rem;
