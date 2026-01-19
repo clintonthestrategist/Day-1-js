@@ -77,12 +77,11 @@ input:focus {
   line-height: 2.4rem;
   max-width: 35rem;
   min-height: 17rem;
-  margin-left: 4rem;
   display: none;
 }
 #imagecontainer {
   width: 8rem;
-  height: 8rem;
+  max-height: 10rem;
 }
 #imagecontainer img {
   width: 100%;
