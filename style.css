@@ -107,6 +107,12 @@ input:focus {
   border-radius: 50%;
   object-fit: cover;
 }
+@media (min-width: 320px) and (max-width: 450px) {
+    #imagecontainer {
+        width: 3.5rem;
+        height: 3.5rem;
+    } 
+}
 #fullname {
   font-size: 3.2rem;
   margin-top: 1rem;
