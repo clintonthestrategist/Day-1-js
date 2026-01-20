@@ -20,30 +20,30 @@
         <section class="outputcontainer">
           <div class="output">
             <p class="outputheader">Average</p>
-            <p id="headeroutput">0</p>
+            <p id="averagescore">0</p>
           </div>
           <div class="output">
             <p class="outputheader">Highest</p>
-            <p>0</p>
+            <p id="highest">0</p>
           </div>
           <div class="output">
             <p class="outputheader">Pass Rate</p>
-            <p>0%</p>
+            <p id="passrate">0%</p>
           </div>
           <div class="output">
             <p class="outputheader">Total Students</p>
-            <p>0</p>
+            <p id="totalstudents">0</p>
           </div>
         </section>
 
       <section class="filterbuttons">
-        <button id="filterall">All</button>
-        <button>Passing</button>
-        <button>Failing</button>
-        <button>Honors (A)</button>
+        <button class="filterall" data-filter="all">All</button>
+        <button class="filterbutton" data-filter="passing">Passing</button>
+        <button class="filterbutton" data-filter="failing">Failing</button>
+        <button class="filterbutton" data-filter="honors">Honors (A)</button>
       </section>
 
-      <table>
+      <table id="studenttable">
         <thead>
           <tr>
             <th>Name</th>
@@ -52,7 +52,7 @@
             <th>Status</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody id="studentlist"></tbody>
       </table>
     </div>
     <script src="script.js"></script>
