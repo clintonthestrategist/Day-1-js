@@ -1,131 +1,176 @@
 :root {
-    --primary: #4a90e2;
-    --secondary: #27ae60;
-    --heading: #2c3e50;
-    --background: #f4f5f7;
-    --text: #ddd;
+  --primary: #4a90e2;
+  --secondary: #27ae60;
+  --heading: #2c3e50;
+  --background: #f4f5f7;
+  --text: #ddd;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 * {
-    padding: 0;
-    margin: 0;
-    font-size: 1.2rem;
-    background-color: var(--background);
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background);
 }
 .entirebody {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+@media (min-width: 320px) and (max-width: 490px) {
+  .entirebody {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .inputcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  .outputcontainer {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media (min-width: 491px) and (max-width: 950px) {
+  .entirebody {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .inputcontainer {
+    width: 100%;
+  }
+  #studentname {
+    width: 70%;
+  }
+  #score {
+    width: 15%;
+  }
+  #addstudentbutton {
+    width: 20%;
+    box-sizing: border-box;
+  }
+}
 
 /** Top Section **/
 .grademanagement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 .grademanagement h1 {
-    font-size: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: var(--heading);
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--heading);
+  text-align: center;
 }
 .inputcontainer {
-    display: flex;
-    gap: 1rem;
-    height: 3.3rem;
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
 }
 input {
-    padding: .3rem;
-    background-color: white;
-    color: black;
+  padding: 0.3rem;
+  background-color: white;
+  color: black;
 }
 input:focus {
-    outline: 0.5px solid rgba(0,0,0,0.2);
+  outline: 0.5px solid rgba(0, 0, 0, 0.2);
 }
-#studentname, #score, #addstudentbutton {
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 5px;
+#studentname,
+#score,
+#addstudentbutton {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 3rem;
 }
 #studentname {
-    width: 25rem;
+  width: 100%;
 }
 #score {
-    width: 8rem;
+  width: 100%;
 }
 #addstudentbutton {
-    background-color: var(--primary);
-    width: 15rem;
-    color: white;
-    cursor: pointer;
+  background-color: var(--primary);
+  width: 100%;
+  color: white;
+  cursor: pointer;
 }
 .outputcontainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 .output {
-    width: 100%;
-    height: 8.5rem;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    gap: 1.8rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  height: 8.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 1.8rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .output p {
-    background-color: white;
+  background-color: white;
 }
 .outputheader {
-    font-weight: 600;
+    font-size: 1.6rem;
+  font-weight: 600;
 }
 .filterbuttons {
-    display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
-    max-width: 1100px;
-    width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  max-width: 1100px;
+  width: 100%;
 }
 .filterbutton {
-    border: none;
-    background-color: var(--text);
-    width: 9rem;
-    height: 2.9rem;
-    border-radius: .2rem;
-    margin-bottom: 2rem;
-    cursor: pointer;
+  border: none;
+  background-color: var(--text);
+  width: 9rem;
+  height: 2.9rem;
+  border-radius: 0.2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }
 .filterall {
-    border: none;
-    width: 5rem;
-    height: 2.9rem;
-    border-radius: .2rem;
-    margin-bottom: 2rem;
-    cursor: pointer;
-    background-color: var(--text);
+  border: none;
+  width: 5rem;
+  height: 2.9rem;
+  border-radius: 0.2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  background-color: var(--text);
 }
 .filterselect {
-    color: white;
-    background-color: var(--primary);
+  color: white;
+  background-color: var(--primary);
 }
 table {
-    width: 100%;
-    border-radius: .8rem;
-    overflow: hidden;
+  width: 100%;
+  border-radius: 0.8rem;
+  overflow: hidden;
 }
-th, td {
-    padding: 1rem 1rem;
-    text-align: left;
-    border-bottom: 1px solid #eee;
+th,
+td {
+  padding: 1rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
 }
 th {
-    background-color: white;
+  background-color: white;
 }
