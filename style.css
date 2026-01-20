@@ -1,0 +1,120 @@
+:root {
+    --primary: #4a90e2;
+    --secondary: #27ae60;
+    --heading: #2c3e50;
+    --background: #f4f5f7;
+    --text: #ddd;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    background-color: var(--background);
+}
+.entirebody {
+    max-width: 900px;
+    margin: 0 auto;
+}
+html {
+    font-size: 62.5%;
+}
+
+/** Top Section **/
+.grademanagement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.grademanagement h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--heading);
+}
+.inputcontainer {
+    display: flex;
+    gap: 1rem;
+    height: 3.3rem;
+}
+input {
+    padding: .3rem;
+    background-color: white;
+    color: var(--text);
+}
+input:focus {
+    outline: 0.5px solid rgba(0,0,0,0.2);
+}
+#studentname, #score, #addstudentbutton {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+#studentname {
+    width: 25rem;
+}
+#score {
+    width: 8rem;
+}
+#addstudentbutton {
+    background-color: var(--primary);
+    width: 15rem;
+    color: white;
+}
+.outputcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.output {
+    width: 100%;
+    height: 8.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 1.8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.output p {
+    background-color: white;
+}
+.outputheader {
+    font-weight: 600;
+}
+.filterbuttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    max-width: 1100px;
+    width: 100%;
+}
+.filterbuttons button {
+    border: none;
+    background-color: var(--text);
+    width: 9rem;
+    height: 2.9rem;
+    border-radius: .2rem;
+    margin-bottom: 2rem;
+}
+#filterall {
+    background-color: var(--primary);
+    color: white;
+    width: 5rem;
+}
+table {
+    width: 100%;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+th, td {
+    padding: 1rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+th {
+    background-color: white;
+}

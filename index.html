@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GM System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="entirebody">
+      <section class="grademanagement">
+        <h1>Grade Management System</h1>
+        <div class="inputcontainer">
+          <input id="studentname" placeholder="Student Name" type="text" />
+          <input id="score" placeholder="Score(0)" type="number" />
+          <button id="addstudentbutton">Add Student</button>
+        </div>
+      </section>
+
+        <section class="outputcontainer">
+          <div class="output">
+            <p class="outputheader">Average</p>
+            <p id="headeroutput">0</p>
+          </div>
+          <div class="output">
+            <p class="outputheader">Highest</p>
+            <p>0</p>
+          </div>
+          <div class="output">
+            <p class="outputheader">Pass Rate</p>
+            <p>0%</p>
+          </div>
+          <div class="output">
+            <p class="outputheader">Total Students</p>
+            <p>0</p>
+          </div>
+        </section>
+
+      <section class="filterbuttons">
+        <button id="filterall">All</button>
+        <button>Passing</button>
+        <button>Failing</button>
+        <button>Honors (A)</button>
+      </section>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Grade</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
