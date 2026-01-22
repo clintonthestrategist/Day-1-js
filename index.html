@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="icon" type="image/svg+xml" href="toplogo.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="entirecontainer">
+      <section class="sidepanel">
+        <h1>Dashboard</h1>
+        <div class="statisticscontainer">
+          <p id="total">Total: 0</p>
+          <p id="done">Done: 0%</p>
+          <p id="urgent">Urgent: 0</p>
+          <p id="overdue">Overdue: 0</p>
+        </div>
+       
+        <div>
+          <h2>Category Filters</h2>
+          <div>
+            <ul id="categorybreakdown"></ul>
+          </div>
+          <div id="filtercontainer">
+            <select name="category" id="categoryside">
+              <option value="all">All</option>
+              <option value="work">Work</option>
+              <option value="personal">Personal</option>
+              <option value="shopping">Shopping</option>
+            </select>
+            <select name="priority" id="priorityside">
+              <option value="all">All</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+            <select name="status" id="statusside">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncomplete</option>
+            </select>
+            <button id="clearcomplete">Clear Completed</button>
+          </div>
+        </div>
+
+        <div class="categorycount">
+            <div class="categories">
+                <p class="categoriesheading">Work</p>
+                <p id="workcat">1</p>
+            </div>
+            <div class="categories">
+                <p class="categoriesheading">Personal</p>
+                <p id="personalcat">2</p>
+            </div>
+            <div class="categories">
+                <p class="categoriesheading">Shopping</p>
+                <p id="categoriescat">3</p>
+            </div>
+        </div>
+      </section>
+      
+
+      <section class="mainbodycontainer">
+        <h1>Task Manager</h1>
+        <div class="inputbox">
+          <input id="todotitle" type="text" placeholder="Type to-do item" />
+          <select name="category" id="maincategory">
+            <option value="">Select an option</option>
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="shopping">Shopping</option>
+          </select>
+          <select name="priority" id="mainpriority">
+            <option value="">Select an option</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <input id="tododuedate" type="date" />
+          <button id="addtask">Add Task</button>
+        </div>
+
+        <section id="todoSections">
+          <div class="todo-category-group">
+            <ul id="todolist" class="todo-list"></ul>
+          </div>
+        </section>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
